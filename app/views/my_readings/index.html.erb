@@ -23,7 +23,11 @@
         <td><%= my_reading.author %></td>
         <td><%= number_to_currency(my_reading.price, unit: '¥', precision: 0) %></td>
         <td><%= my_reading.publisher %></td>
+<<<<<<< HEAD
         <td><%= my_reading.release_date.strftime('%Y/%M/%D') %></td>
+=======
+        <td><%= my_reading.release_date.strftime('%Y%M') %></td>
+>>>>>>> change_date2
         <td><%= my_reading.isbn %></td>
         <td><img src="<%= my_reading.image %>" alt="" hight="80%" width="80%"></td>
         <td><%= link_to '表示', my_reading %></td>
