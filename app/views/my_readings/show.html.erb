@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>題名:</strong>
+  <%= @my_reading.book %>
+</p>
+
+<p>
+  <strong>著者:</strong>
+  <%= @my_reading.author %>
+</p>
+
+<p>
+  <strong>価格:</strong>
+  <%= @my_reading.price %>
+</p>
+
+<p>
+  <strong>出版社:</strong>
+  <%= @my_reading.publisher %>
+</p>
+
+<p>
+  <strong>発売日:</strong>
+  <%= @my_reading.release_date %>
+</p>
+
+<p>
+  <strong>ISBNコード:</strong>
+  <%= @my_reading.isbn %>
+</p>
+
+<p>
+  <strong></strong>
+  <img src="<%= @my_reading.image %>" alt="" hight="40%" width="40%">
+</p>
+
+<%= link_to '編集', edit_my_reading_path(@my_reading) %> |
+<%= link_to '戻る', my_readings_path %>
