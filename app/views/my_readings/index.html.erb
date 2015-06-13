@@ -21,7 +21,7 @@
       <tr>
         <td><%= my_reading.book %></td>
         <td><%= my_reading.author %></td>
-        <td><%= my_reading.price %></td>
+        <td><%= number_to_currency(my_reading.price, unit: '¥', precision: 0) %></td>
         <td><%= my_reading.publisher %></td>
         <td><%= my_reading.release_date %></td>
         <td><%= my_reading.isbn %></td>
